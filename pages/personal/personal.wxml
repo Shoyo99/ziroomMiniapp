@@ -1,0 +1,37 @@
+<view class="items">
+  <navigator hover-class="none" class="item" open-type="navigate" url="/pages/editpersonal/editpersonal">
+    <view>头像</view>
+    <view class="headpic">
+      <image src="https://fang.1314000.cn/zfw/page-myIcon.png" />
+      <text class="iconfont font18 icon-fanhui"></text>
+    </view>
+  </navigator>
+  <navigator hover-class="none" class="item" open-type="navigate" url="/pages/editpersonal/editpersonal">
+    <view>昵称</view>
+    <view>
+      王先生
+      <text class="iconfont font18 icon-fanhui"></text>
+    </view>
+  </navigator>
+  <navigator hover-class="none" class="item" open-type="navigate" url="/pages/editpersonal/editpersonal">
+    <view>手机号</view>
+    <view>
+      13478678987
+      <text class="iconfont font18 icon-fanhui"></text>
+    </view>
+  </navigator>
+  <navigator hover-class="none" class="item" open-type="navigate" url="/pages/editpersonal/editpersonal">
+    <view>性别</view>
+    <view>
+      先生
+      <text class="iconfont font18 icon-fanhui"></text>
+    </view>
+  </navigator>
+  <navigator hover-class="none" class="item" open-type="navigate" url="/pages/editpersonal/editpersonal">
+    <view>年龄</view>
+    <view>
+      25
+      <text class="iconfont font18 icon-fanhui"></text>
+    </view>
+  </navigator>
+</view>

@@ -1,0 +1,13 @@
+@import '/common/style/font.wxss';
+/*全局页面背景色与字体大小*/
+page{
+  font-size: 35rpx;
+  background: #fff;
+}
+/*全局隐藏滚动条*/
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+

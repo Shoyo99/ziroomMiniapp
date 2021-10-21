@@ -1,0 +1,54 @@
+<view class="myhome">
+  <view class="myhome-bg">
+    <image src="/static/img/home/bg.png"></image>
+  </view>
+  <view class="home-info">
+    <image src="/static/img/home/profile.webp" />
+    <text class="home-info-name">登录/注册 ></text>
+    <text class="home-info-label">未认证</text>
+  </view>
+</view>
+<view class="home-item">
+  <view>
+    <image src="/static/icon/icon_collection_24_color.png"></image>
+    <text>我的收藏</text>
+    <image src="/static/icon/icon_housekeeper_24_color.png"></image>
+    <text>我的卡券</text>
+  </view>
+</view>
+<view class="home-service">
+  <view class="home-service-item">
+    <text>生活服务</text>
+    <view class="split"></view>
+  </view>
+  <view class="home-service-item">
+    <view class="home-service-icon">
+      <image src="/static/icon/icon_clean_24_color.png"></image>
+      <text>家居清洁</text>
+    </view>
+    <view class="home-service-icon">
+      <image src="/static/icon/icon_move_24_color.png"></image>
+      <text>重物搬运</text>
+    </view>
+  </view>
+</view>
+<view class="home-service">
+  <view class="home-service-item">
+    <text>帮助中心</text>
+    <view class="split"></view>
+  </view>
+  <view class="home-service-item">
+    <view class="home-service-icon">
+      <image src="/static/icon/icon_guide_24_color.png"></image>
+      <text>入住指南</text>
+    </view>
+    <view class="home-service-icon">
+      <image src="/static/icon/icon_service_24_color.png"></image>
+      <text>客服咨询</text>
+    </view>
+    <view class="home-service-icon">
+      <image src="/static/icon/icon_aboutus_24_color.png"></image>
+      <text>关于我们</text>
+    </view>
+  </view>
+</view>

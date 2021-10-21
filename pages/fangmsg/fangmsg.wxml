@@ -1,0 +1,24 @@
+<scroll-view class="sview" scroll-y="{{true}}">
+  <view class="items">
+    <view class="item">
+      <view>张小明</view>
+      <view>209-09-11 10:00-12:00</view>
+      <view>看回龙观东大街 龙腾四区3号楼1单元202室</view>
+    </view>
+    <view class="calltel">
+      <text class="iconfont icon-dianhua"></text>
+      联系看房
+    </view>
+  </view>
+  <view class="items">
+    <view class="item">
+      <view>李小华</view>
+      <view>209-09-11 10:00-12:00</view>
+      <view>看回龙观东大街 龙腾四区3号楼1单元202室</view>
+    </view>
+    <view class="calltel">
+      <text class="iconfont icon-dianhua"></text>
+      联系看房
+    </view>
+  </view>
+</scroll-view>

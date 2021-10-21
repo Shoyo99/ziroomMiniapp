@@ -1,0 +1,208 @@
+<!-- 搜索 -->
+<view class="searchBox">
+  <view class="searchBox-area">
+    <text>北京</text>
+    <text class="iconfont icon-xiangxia font10"></text>
+  </view>
+  <view class="searchBox-input">
+    <text class="iconfont icon-sousuo1"> 你想住在哪？</text>
+  </view>
+</view>
+<!-- 幻灯片 -->
+<view>
+  <swiper class="swiper-box" indicator-dots="{{indicatordots}}" circular="{{circular}}" autoplay="{{autoplay}}" duration="{{duration}}" interval="{{interval}}">
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image src="{{item}}" mode="widthFix" class="slide-image"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+<!-- 图标导航 -->
+<view class="icon-nav">
+  <navigator hover-class="none" open-type="navigate" url="">
+    <image src="/static/icon/icon_home_32_selected.png" />
+    <text>整租</text>
+  </navigator>
+  <navigator hover-class="none" open-type="navigate" url="">
+    <image src="/static/icon/icon_joinus_24_color.png" />
+    <text>合租</text>
+  </navigator>
+  <navigator hover-class="none" open-type="navigate" url="">
+    <image src="/static/icon/icon_coupon_24_color.png" />
+    <text>直租</text>
+  </navigator>
+  <navigator hover-class="none" open-type="navigate" url="">
+    <image src="/static/icon/icon_guide_24_color.png" />
+    <text>短租</text>
+  </navigator>
+</view>
+<!-- 租房小组 -->
+<view class="renting-box">
+  <view class="renting-itme">
+    <navigator open-type="navigate" url="">
+      <image src="/static/img/index/img01.jpg" mode="widthFix"/>
+    </navigator>
+    <navigator open-type="navigate" url="">
+      <image src="/static/img/index/img02.jpg" mode="widthFix"/>
+    </navigator>
+  </view>
+</view>
+<!-- 推荐房源 -->
+<view class="recommend">
+  <view class="nav">
+    <view class="recommend-search">
+      <view class="searchBox-area" data-index="{{0}}" bind:tap="onShadeDiv">
+        <text class="font25 {{ select[0] }}">{{text[0]}}</text>
+        <text class="iconfont icon10 {{ arrows[0] }} {{ iconSelect[0] }}"></text>
+      </view>
+      <view class="searchBox-area" data-index="{{1}}" bind:tap="onShadeDiv">
+        <text class="font25 {{ select[1] }}">{{text[1]}}</text>
+        <text class="iconfont icon10 {{ arrows[1] }} {{ iconSelect[1] }}"></text>
+      </view>
+      <view class="searchBox-area" data-index="{{2}}" bind:tap="onShadeDiv">
+        <text class="font25 {{ select[2] }}">{{text[2]}}</text>
+        <text class="iconfont icon10 {{ arrows[2] }} {{ iconSelect[2] }}"></text>
+      </view>
+      <view class="searchBox-area" data-index="{{3}}" bind:tap="onShadeDiv">
+        <text class="font25 {{ select[3] }}">{{text[3]}}</text>
+        <text class="iconfont icon10 {{ arrows[3] }} {{ iconSelect[3] }}"></text>
+      </view>
+    </view>
+    <!-- 选择器 -->
+    <view class="shadediv {{show[0]}}">
+      <view class="columns">
+        <view wx:for="{{ columns[0] }}" wx:for-index="index" data-index="{{index}}" class="{{ columnClass[index]}}"  bind:tap="onSelect">
+          {{ item }}
+          <view class="{{ line[index] }}"></view>
+        </view>
+      </view>
+    </view>
+    <view class="shadediv {{show[1]}}">
+      <view class="columns">
+        <view wx:for="{{ columns[1] }}" wx:for-index="index" data-index="{{index}}" class="{{ columnClass[index]}}"  bind:tap="onSelect">
+          {{ item }}
+          <view class="{{ line[index] }}"></view>
+        </view>
+      </view>
+    </view>
+    <view class="shadediv {{show[2]}}">
+      <view class="columns">
+        <view wx:for="{{ columns[2] }}" wx:for-index="index" data-index="{{index}}" class="{{ columnClass[index]}}"  bind:tap="onSelect">
+          {{ item }}
+          <view class="{{ line[index] }}"></view>
+        </view>
+      </view>
+    </view>
+    <view class="shadediv {{show[3]}}">
+      <view class="columns">
+        <view wx:for="{{ columns[3] }}" wx:for-index="index" data-index="{{index}}" class="{{ columnClass[index]}}"  bind:tap="onSelect">
+          {{ item }}
+          <view class="{{ line[index] }}"></view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <scroll-view scroll-y="{{true}}" class="sview">
+    <view class="recommend">
+      <navigator class="recommend-list" open-type="navigate" url="/pages/fang/fang?id=1">
+        <view>
+          <image src="/static/img/room/test.jpg" />
+        </view>
+        <view class="recommend-list-item">
+          <view class="recommend-list-item-title">合租 - 双裕小区3居室-南卧</view>
+          <view class="recommend-list-item-spec">120平米 | 3室1厅</view>
+          <view class="recommend-list-item-tag">
+            <text class="tag1">押一付三</text>
+            <text class="tag2">免押金</text>
+            <text class="tag3">精装</text>
+          </view>
+          <view class="recommend-list-item-price">
+            <text>1500</text>
+            元/月
+          </view>
+        </view>
+      </navigator>
+    </view>
+    <view class="recommend">
+      <navigator class="recommend-list" open-type="navigate" url="/pages/fang/fang?id=1">
+        <view>
+          <image src="/static/img/room/test.jpg" />
+        </view>
+        <view class="recommend-list-item">
+          <view class="recommend-list-item-title">合租 - 双裕小区3居室-南卧</view>
+          <view class="recommend-list-item-spec">120平米 | 3室1厅</view>
+          <view class="recommend-list-item-tag">
+            <text class="tag1">押一付三</text>
+            <text class="tag2">免押金</text>
+            <text class="tag3">精装</text>
+          </view>
+          <view class="recommend-list-item-price">
+            <text>1500</text>
+            元/月
+          </view>
+        </view>
+      </navigator>
+    </view>
+    <view class="recommend">
+      <navigator class="recommend-list" open-type="navigate" url="/pages/fang/fang?id=1">
+        <view>
+          <image src="/static/img/room/test.jpg" />
+        </view>
+        <view class="recommend-list-item">
+          <view class="recommend-list-item-title">合租 - 双裕小区3居室-南卧</view>
+          <view class="recommend-list-item-spec">120平米 | 3室1厅</view>
+          <view class="recommend-list-item-tag">
+            <text class="tag1">押一付三</text>
+            <text class="tag2">免押金</text>
+            <text class="tag3">精装</text>
+          </view>
+          <view class="recommend-list-item-price">
+            <text>1500</text>
+            元/月
+          </view>
+        </view>
+      </navigator>
+    </view>
+    <view class="recommend">
+      <navigator class="recommend-list" open-type="navigate" url="/pages/fang/fang?id=1">
+        <view>
+          <image src="/static/img/room/test.jpg" />
+        </view>
+        <view class="recommend-list-item">
+          <view class="recommend-list-item-title">合租 - 双裕小区3居室-南卧</view>
+          <view class="recommend-list-item-spec">120平米 | 3室1厅</view>
+          <view class="recommend-list-item-tag">
+            <text class="tag1">押一付三</text>
+            <text class="tag2">免押金</text>
+            <text class="tag3">精装</text>
+          </view>
+          <view class="recommend-list-item-price">
+            <text>1500</text>
+            元/月
+          </view>
+        </view>
+      </navigator>
+    </view>
+    <view class="recommend">
+      <navigator class="recommend-list" open-type="navigate" url="/pages/fang/fang?id=1">
+        <view>
+          <image src="/static/img/room/test.jpg" />
+        </view>
+        <view class="recommend-list-item">
+          <view class="recommend-list-item-title">合租 - 双裕小区3居室-南卧</view>
+          <view class="recommend-list-item-spec">120平米 | 3室1厅</view>
+          <view class="recommend-list-item-tag">
+            <text class="tag1">押一付三</text>
+            <text class="tag2">免押金</text>
+            <text class="tag3">精装</text>
+          </view>
+          <view class="recommend-list-item-price">
+            <text>1500</text>
+            元/月
+          </view>
+        </view>
+      </navigator>
+    </view>
+  </scroll-view>
+</view>

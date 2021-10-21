@@ -1,0 +1,18 @@
+
+<!-- 新闻列表 -->
+<view class="recommend">
+  <navigator class="recommend-list" open-type="navigate" url="/pages/newsdetail/newsdetail?id=1">
+    <view>
+      <image src="/static/img/room/test.jpg" />
+    </view>
+    <view class="recommend-list-item">
+      <view class="recommend-list-item-title">购租并举下北京租房能落户和上学吗？</view>
+      <view class="recommend-list-item-desc">北京市共有产权住房管理暂行办法》发布，北京的共有产权房政策于2017年9月30日起正式实施。</view>
+      <view class="recommend-list-item-date">2019-08-11</view>
+    </view>
+  </navigator>
+</view>
+<!-- 回到顶部 -->
+<view class="gototop">
+  <text class="iconfont font30 icon-fanhuidingbu"></text>
+</view>
